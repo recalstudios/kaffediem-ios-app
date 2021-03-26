@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00D27D3260E66B900A580B9 /* MenyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D27D2260E66B900A580B9 /* MenyView.swift */; };
+		C00D27DF260E738D00A580B9 /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D27DE260E738D00A580B9 /* DrinkView.swift */; };
 		C01AE125260A644D00B95775 /* NyheterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01AE124260A644D00B95775 /* NyheterView.swift */; };
 		C01F9117260A1CE200BC0FD3 /* Kaffe_DiemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */; };
 		C01F9119260A1CE200BC0FD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9118260A1CE200BC0FD3 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C00D27D2260E66B900A580B9 /* MenyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenyView.swift; sourceTree = "<group>"; };
+		C00D27DE260E738D00A580B9 /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 		C01AE124260A644D00B95775 /* NyheterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyheterView.swift; sourceTree = "<group>"; };
 		C01F9113260A1CE200BC0FD3 /* Kaffe Diem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaffe Diem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kaffe_DiemApp.swift; sourceTree = "<group>"; };
@@ -37,6 +41,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00D27D5260E71D400A580B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C00D27D2260E66B900A580B9 /* MenyView.swift */,
+				C01F9118260A1CE200BC0FD3 /* ContentView.swift */,
+				C01AE124260A644D00B95775 /* NyheterView.swift */,
+				C01F9126260A2C2900BC0FD3 /* BestillView.swift */,
+				C00D27DE260E738D00A580B9 /* DrinkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C00D27D8260E721D00A580B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C01F910A260A1CE200BC0FD3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +79,9 @@
 		C01F9115260A1CE200BC0FD3 /* Kaffe Diem */ = {
 			isa = PBXGroup;
 			children = (
+				C00D27D8260E721D00A580B9 /* Models */,
 				C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */,
-				C01F9118260A1CE200BC0FD3 /* ContentView.swift */,
-				C01AE124260A644D00B95775 /* NyheterView.swift */,
-				C01F9126260A2C2900BC0FD3 /* BestillView.swift */,
+				C00D27D5260E71D400A580B9 /* Views */,
 				C01F911A260A1CE300BC0FD3 /* Assets.xcassets */,
 				C01F911F260A1CE300BC0FD3 /* Info.plist */,
 				C01F911C260A1CE300BC0FD3 /* Preview Content */,
@@ -147,6 +169,8 @@
 				C01F9119260A1CE200BC0FD3 /* ContentView.swift in Sources */,
 				C01F9117260A1CE200BC0FD3 /* Kaffe_DiemApp.swift in Sources */,
 				C01AE125260A644D00B95775 /* NyheterView.swift in Sources */,
+				C00D27DF260E738D00A580B9 /* DrinkView.swift in Sources */,
+				C00D27D3260E66B900A580B9 /* MenyView.swift in Sources */,
 				C01F9127260A2C2900BC0FD3 /* BestillView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

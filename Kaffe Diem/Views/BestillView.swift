@@ -42,7 +42,7 @@ struct BestillView: View {
                     }
                     .frame(width: 300)
                     
-                    NavigationLink(destination: NyheterView()) {
+                    NavigationLink(destination: MenyView()) {
                         HStack {
                             Text("Bestill")
                                 .font(.title2)
