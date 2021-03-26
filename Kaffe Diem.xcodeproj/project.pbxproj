@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01AE125260A644D00B95775 /* NyheterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01AE124260A644D00B95775 /* NyheterView.swift */; };
 		C01F9117260A1CE200BC0FD3 /* Kaffe_DiemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */; };
 		C01F9119260A1CE200BC0FD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9118260A1CE200BC0FD3 /* ContentView.swift */; };
 		C01F911B260A1CE300BC0FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F911A260A1CE300BC0FD3 /* Assets.xcassets */; };
 		C01F911E260A1CE300BC0FD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F911D260A1CE300BC0FD3 /* Preview Assets.xcassets */; };
+		C01F9127260A2C2900BC0FD3 /* BestillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9126260A2C2900BC0FD3 /* BestillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01AE124260A644D00B95775 /* NyheterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyheterView.swift; sourceTree = "<group>"; };
 		C01F9113260A1CE200BC0FD3 /* Kaffe Diem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaffe Diem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kaffe_DiemApp.swift; sourceTree = "<group>"; };
 		C01F9118260A1CE200BC0FD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C01F911A260A1CE300BC0FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01F911D260A1CE300BC0FD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C01F911F260A1CE300BC0FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01F9126260A2C2900BC0FD3 /* BestillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				C01F9116260A1CE200BC0FD3 /* Kaffe_DiemApp.swift */,
 				C01F9118260A1CE200BC0FD3 /* ContentView.swift */,
+				C01AE124260A644D00B95775 /* NyheterView.swift */,
+				C01F9126260A2C2900BC0FD3 /* BestillView.swift */,
 				C01F911A260A1CE300BC0FD3 /* Assets.xcassets */,
 				C01F911F260A1CE300BC0FD3 /* Info.plist */,
 				C01F911C260A1CE300BC0FD3 /* Preview Content */,
@@ -140,6 +146,8 @@
 			files = (
 				C01F9119260A1CE200BC0FD3 /* ContentView.swift in Sources */,
 				C01F9117260A1CE200BC0FD3 /* Kaffe_DiemApp.swift in Sources */,
+				C01AE125260A644D00B95775 /* NyheterView.swift in Sources */,
+				C01F9127260A2C2900BC0FD3 /* BestillView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

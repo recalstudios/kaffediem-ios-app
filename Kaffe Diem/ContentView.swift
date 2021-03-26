@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        UITabBar.appearance().barTintColor = UIColor(Color("AccentColor"))
+        UITabBar.appearance().unselectedItemTintColor = UIColor(Color("UnselectedColor"))
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            BestillView()
+                .ignoresSafeArea()
+                .tabItem {
+                Image(systemName: "square.and.pencil")
+                Text("Bestill")
+                }
+            
+            NyheterView()
+                .ignoresSafeArea()
+                .tabItem {
+                    Image(systemName: "newspaper")
+                    Text("Nyheter")
+                }
+        }
+        .accentColor(Color("BackgroundColor"))
     }
 }
 
