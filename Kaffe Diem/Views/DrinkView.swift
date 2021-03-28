@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DrinkView: View {
     @State var showDetails = false
+    @State var showingAlert = false
     
     var name: String
     var description: String
@@ -51,7 +52,33 @@ struct DrinkView: View {
                         .background(Color("AccentColor"))
                         .cornerRadius(30)
                         .onTapGesture {
-                            print("Bought " + name)
+                            // Show alert
+                            showingAlert = true
+                            
+                            // Handle notification
+                            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {
+                                granted, error in
+                                if error != nil {
+                                    print("[ERROR] Error occured while getting notification authorization")
+                                }
+                            }
+                            
+                            let content = UNMutableNotificationContent()
+                            content.title = "Bestilling klar"
+                            content.body = "Din " + name + " er nå klar for henting på Kaffe Diem."
+                            
+                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+                            let uuidString = UUID().uuidString
+                            let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+                            
+                            UNUserNotificationCenter.current().add(request) { (error) in
+                                if error != nil {
+                                    print("[ERROR] Error occured while sheduling notification request")
+                                }
+                            }
+                        }
+                        .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("Bestilling registrert"), message: Text("For testing vil du motta en varsling om 10 sekunder som forklarer at din bestilling er klar for henting"), dismissButton: .default(Text("OK")))
                         }
                 }
                 Spacer()

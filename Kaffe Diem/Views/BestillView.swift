@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BestillView: View {
     @State var navn = ""
-    @State var varsling = true
+    @State var varsling = false
     
     var body: some View {
         NavigationView {
