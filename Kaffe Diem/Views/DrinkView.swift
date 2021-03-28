@@ -13,6 +13,7 @@ struct DrinkView: View {
     var name: String
     var description: String
     var image: String
+    var cost: Int
     
     var body: some View {
         VStack {
@@ -36,9 +37,23 @@ struct DrinkView: View {
                 showDetails.toggle()
             }
             
-            HStack(alignment: .top) {
-                Text(description)
-                    .foregroundColor(Color("AccentColor"))
+            HStack {
+                VStack {
+                    Text(description)
+                        .foregroundColor(Color("AccentColor"))
+                    Spacer()
+                    Text(String(cost) + "kr")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.vertical, 5.0)
+                        .padding(.horizontal, 20.0)
+                        .foregroundColor(Color("BackgroundColor"))
+                        .background(Color("AccentColor"))
+                        .cornerRadius(30)
+                        .onTapGesture {
+                            print("Bought " + name)
+                        }
+                }
                 Spacer()
                 Image(image)
                     .resizable()
@@ -58,8 +73,7 @@ struct DrinkView: View {
 struct DrinkView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            DrinkView(name: "Name", description: "Description", image: "TestImage")
-            DrinkView(name: "Even longer name", description: "Description", image: "TestImage")
+            DrinkView(name: "Name", description: "Description", image: "TestImage", cost: 15)
         }
     }
 }
