@@ -78,7 +78,7 @@ struct DrinkView: View {
                             }
                         }
                         .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("Bestilling registrert"), message: Text("For testing vil du motta en varsling om 10 sekunder som forklarer at din bestilling er klar for henting"), dismissButton: .default(Text("OK")))
+                            Alert(title: Text("Bestilling registrert"), message: Text("Du vil motta en varsling når din bestilling er klar for henting"), dismissButton: .default(Text("OK")))
                         }
                 }
                 Spacer()
