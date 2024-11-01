@@ -15,6 +15,7 @@
 		C01F911B260A1CE300BC0FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F911A260A1CE300BC0FD3 /* Assets.xcassets */; };
 		C01F911E260A1CE300BC0FD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F911D260A1CE300BC0FD3 /* Preview Assets.xcassets */; };
 		C01F9127260A2C2900BC0FD3 /* BestillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F9126260A2C2900BC0FD3 /* BestillView.swift */; };
+		C0A713C82620451900816783 /* NyhetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A713C72620451900816783 /* NyhetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C01F911D260A1CE300BC0FD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C01F911F260A1CE300BC0FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C01F9126260A2C2900BC0FD3 /* BestillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestillView.swift; sourceTree = "<group>"; };
+		C0A713C72620451900816783 /* NyhetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyhetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 				C00D27D2260E66B900A580B9 /* MenyView.swift */,
 				C01F9118260A1CE200BC0FD3 /* ContentView.swift */,
 				C01AE124260A644D00B95775 /* NyheterView.swift */,
+				C0A713C72620451900816783 /* NyhetView.swift */,
 				C01F9126260A2C2900BC0FD3 /* BestillView.swift */,
 				C00D27DE260E738D00A580B9 /* DrinkView.swift */,
 			);
@@ -168,6 +171,7 @@
 			files = (
 				C01F9119260A1CE200BC0FD3 /* ContentView.swift in Sources */,
 				C01F9117260A1CE200BC0FD3 /* Kaffe_DiemApp.swift in Sources */,
+				C0A713C82620451900816783 /* NyhetView.swift in Sources */,
 				C01AE125260A644D00B95775 /* NyheterView.swift in Sources */,
 				C00D27DF260E738D00A580B9 /* DrinkView.swift in Sources */,
 				C00D27D3260E66B900A580B9 /* MenyView.swift in Sources */,
@@ -304,7 +308,7 @@
 				DEVELOPMENT_TEAM = PV64W279J4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Kaffe Diem/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,7 +330,7 @@
 				DEVELOPMENT_TEAM = PV64W279J4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Kaffe Diem/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
