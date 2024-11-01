@@ -39,14 +39,18 @@ struct DrinkView: View {
             }
             
             HStack {
-                VStack {
+                VStack(alignment: .leading) {
                     Text(description)
                         .foregroundColor(Color("AccentColor"))
                     Spacer()
                     Text(String(cost) + "kr")
                         .font(.title2)
+                        .foregroundColor(Color("AccentColor"))
                         .fontWeight(.bold)
-                        .padding(.vertical, 5.0)
+                    Text("KJØP")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.vertical, 7.0)
                         .padding(.horizontal, 20.0)
                         .foregroundColor(Color("BackgroundColor"))
                         .background(Color("AccentColor"))
