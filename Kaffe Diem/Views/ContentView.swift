@@ -9,27 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     init() {
-        UITabBar.appearance().barTintColor = UIColor(Color("AccentColor"))
+        // Stop tab bar becoming translucent on scroll
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().isTranslucent = true
+        
+        // Set tab bar background color
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color("UnselectedColor"))
+        UITabBar.appearance().backgroundColor = UIColor(Color("AccentColor"))
     }
     
     var body: some View {
         TabView {
-            BestillView()
-                .ignoresSafeArea()
-                .tabItem {
-                Image(systemName: "square.and.pencil")
-                Text("Bestill")
-                }
+            Tab("Bestill", systemImage: "square.and.pencil") {
+                BestillView()
+            }
             
-            NyheterView()
-                .ignoresSafeArea()
-                .tabItem {
-                    Image(systemName: "newspaper")
-                    Text("Nyheter")
-                }
+            Tab("Nyheter", systemImage: "newspaper") {
+                NyheterView()
+            }
         }
-        .accentColor(Color("BackgroundColor"))
+        .tint(Color("BackgroundColor"))
     }
 }
 
