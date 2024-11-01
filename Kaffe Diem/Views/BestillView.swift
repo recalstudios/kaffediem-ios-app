@@ -17,9 +17,17 @@ struct BestillView: View {
                 Color("BackgroundColor")
                     .ignoresSafeArea()
                 VStack {
-                    Image("Liquid")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    ZStack {
+                        Image("Liquid")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .ignoresSafeArea()
+                        Image("Logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 300.0)
+                            .offset(y: -80)
+                    }
                     Spacer()
                 }
                 
